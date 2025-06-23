@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title id="page-title">顔●○リバーシ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <div id="language-toggle">
+      <button onclick="switchLanguage('ja')">日本語</button>
+      <button onclick="switchLanguage('en')">English</button>
+    </div>
+    <h1 id="game-title">顔●○リバーシ</h1>
+  </div>
+
+  <div class="controls">
+    <label>
+      <span class="label-black-img">⚫ 黒石画像を選択:</span>
+      <input type="file" id="blackImage" />
+    </label>
+    <label>
+      <span class="label-white-img">⚪ 白石画像を選択:</span>
+      <input type="file" id="whiteImage" />
+    </label><br />
+    <label>
+      <span class="label-black-name">⚫ プレイヤー名:</span>
+      <input id="blackName" placeholder="黒プレイヤー" />
+    </label>
+    <label>
+      <span class="label-white-name">⚪ プレイヤー名:</span>
+      <input id="whiteName" placeholder="白プレイヤー" />
+    </label>
+  </div>
+
+  <div id="status" class="status">黒:2 白:2 - 黒の番です</div>
+
+  <div id="board" class="board"></div>
+
+  <button id="restartBtn" onclick="restartGame()">🔁 リスタート</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

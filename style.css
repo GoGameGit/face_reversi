@@ -1,0 +1,32 @@
+
+body {
+  font-family: sans-serif;
+  background: #6ab04c;
+  text-align: center;
+  padding: 1rem;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  grid-template-rows: repeat(8, 40px);
+  justify-content: center;
+  margin: 1rem auto;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  position: relative;
+}
+.stone {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  object-fit: cover;
+}
+.black { border: 2px solid black; }
+.white { border: 2px solid white; }
+.controls { margin-bottom: 1rem; }
